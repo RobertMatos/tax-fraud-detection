@@ -115,7 +115,6 @@ plt.tight_layout()
 plt.savefig(os.path.join(figures_path, "histogramas_impostos.png"))
 plt.show()
 
-# Gerando a matriz de correlação
 plt.figure(figsize=(10, 8))
 sns.heatmap(df.corr(), annot=True, cmap="coolwarm", fmt=".2f", linewidths=0.5)
 plt.title("Mapa de Calor - Correlação entre as Variáveis")
